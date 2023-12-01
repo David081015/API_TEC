@@ -8,14 +8,15 @@ const swaggerUI = require('swagger-ui-express')
 const swaggerJsDoc = require('swagger-jsdoc')
 const { SwaggerTheme } = require('swagger-themes');
 const redoc = require('redoc-express');
-
-const port = process.env.PORT || 8084;
+import database from 'mime-db';
+import {port, host, user, password, database, dbport} from './config.js';
 
 const dataDeBase = {
-    host: 'localhost',
-    user: 'root',
-    password: 'Castillo105.dct',
-    database: 'alumnos',
+    host: host,
+    user: user,
+    password: password,
+    database: database,
+    port : dbport
 };
 
 const app = express();
