@@ -68,7 +68,7 @@ app.get('/', function (req, res) {
 //ALL USERS
 /**
  * @swagger
- * /Alumno/:
+ * /alumnos/:
  *   get:
  *     tags:
  *       - Alumnos
@@ -91,7 +91,7 @@ app.get('/alumnos', async (req, resp) => {
 // SELECT
 /**
  * @swagger
- * /Alumno/{id}:
+ * /alumnos/{id}:
  *   get:
  *     tags:
  *       - Alumnos
@@ -237,7 +237,7 @@ app.put('/alumnos', async (req, res) => {
 // DELETE
 /**
  * @swagger
- * /Alumno/:
+ * /alumnos/:
  *   delete:
  *     tags:
  *       - Alumnos
