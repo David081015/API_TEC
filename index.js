@@ -8,15 +8,19 @@ const swaggerUI = require('swagger-ui-express')
 const swaggerJsDoc = require('swagger-jsdoc')
 const { SwaggerTheme } = require('swagger-themes');
 const redoc = require('redoc-express');
-import database from 'mime-db';
-import {port, host, user, password, database, dbport} from './config.js';
+const port = process.env.PORT || 8084
+const host = process.env.host || 'localhost'
+const user = process.env.user || 'root'
+const password = process.env.password || 'Castillo105.dct'
+const database = process.env.database || 'alumnos'
+const dbport = process.env.dbport || 3306
 
 const dataDeBase = {
     host: host,
     user: user,
     password: password,
     database: database,
-    port : dbport
+    port:dbport
 };
 
 const app = express();
@@ -337,5 +341,5 @@ app.get(
   );
 
 app.listen(port, () => {
-    console.log('Servidor express escuchando');
+    console.log('Servidor express escuchando en puerto: ',port);
 });
