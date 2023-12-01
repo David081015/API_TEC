@@ -129,7 +129,7 @@ app.get('/alumnos/:id', async (req, resp) => {
 // INSERT INTO
 /**
  * @swagger
- * /Alumno/:
+ * /alumnos/:
  *   post:
  *     tags:
  *       - Alumnos
@@ -173,7 +173,7 @@ app.post('/alumnos', async (req, resp) => {
 // UPDATE
 /**
  * @swagger
- * /Alumno/:
+ * /alumnos/:
  *   put:
  *     tags:
  *       - Alumnos
