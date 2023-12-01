@@ -1,2 +1,2 @@
-# ListaAmigos
+# TEC
 API
