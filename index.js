@@ -25,6 +25,13 @@ const dataDeBase = {
 
 const app = express();
 
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+  });
+
 const theme = new SwaggerTheme('v3');
 
 const options = {
@@ -34,7 +41,12 @@ const options = {
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    optionsSuccessStatus: 204,
+  }));
 
 const def = fs.readFileSync(path.join(__dirname,'./swagger.json'),
     {encoding:'utf8',flags:'r'});

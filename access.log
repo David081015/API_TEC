@@ -124,3 +124,4 @@
 ::1 - - [01/Dec/2023:03:17:55 +0000] "PUT /alumnos/ HTTP/1.1" 200 46 "http://localhost:8084/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0"
 ::1 - - [01/Dec/2023:14:32:35 +0000] "GET /Alumno/ HTTP/1.1" 404 146 "http://localhost:8084/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0"
 ::1 - - [01/Dec/2023:15:29:58 +0000] "GET /alumnos/ HTTP/1.1" 200 409 "http://localhost:8084/api-docs/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0"
+::ffff:127.0.0.1 - - [06/Dec/2023:20:55:44 +0000] "GET /alumnos HTTP/1.1" 200 409 "-" "Thunder Client (https://www.thunderclient.com)"
